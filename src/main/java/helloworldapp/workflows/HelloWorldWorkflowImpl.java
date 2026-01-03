@@ -19,7 +19,6 @@ public class HelloWorldWorkflowImpl implements HelloWorldWorkflow {
      * are executed outside the workflow thread on the activity worker that can be on a
      * different host. Temporal is going to dispatch the activity results back to the workflow and
      * unblock the stub as soon as activity is completed on the activity worker.
-     *
      * The activity options that were defined above are passed on as a parameter.
      */
     private final HelloWorldActivities activity = Workflow.newActivityStub(HelloWorldActivities.class, options);
